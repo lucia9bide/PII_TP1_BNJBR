@@ -7,11 +7,15 @@
     --tertiary-color: #D97E6A;
     --extra-color: #A64E46;
     --text-color: #260101;
+    --text-blue: #2222CC;
 
     --title-font: "Encode Sans SC", sans-serif;
     --GoDo-font: "Gowun Dodum", sans-serif;
 }
-
+*{
+    background-color:var(--primary-color);
+    color:var(--text-blue);
+}
 .titulo_principal{
     font-family: var(--title-font);
     color: var(--extra-color);
