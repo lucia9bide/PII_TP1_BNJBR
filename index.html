@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="icon" href="/assets/icons/SAFARI ico.ico">
+    <title>Safari: viajá y creá</title>
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="links">
-                <a href="/pages/formulario.html">Formulario</a>
-            </div>
-        </nav>
+        <div class="logoDiv">
+            <img class="headerLogo" src="/assets/img/SAFARI logo.png" alt="safari logo">
+        </div>
+
+        <div class="links">
+            <a class="linkNav" href="/index.html">Inicio</a>
+            <a class="linkNav" href="/pages/travelplans.html">Viajes</a>
+            <a class="linkNav" href="/pages/aboutus.html">Sobre nosotros</a>
+            <a class="linkNav" href="/pages/formulario.html">Concretar viaje</a>
+        </div>
     </header>
     <main>
-        <section>
-            <div class="title">
-                <h1 class="titulo_principal">Titulo</h1>
+        <section class="bannerSection">
+            <div class="bannerDiv">
+                <img class="bannerSafari" src="/assets/img/safari banner.png" alt="safari banner">
             </div>
         </section>
-        <section>
-            <p>parrafo</p>
+        <section class="contenidos">
+            <div class="destinosDiv">
+                <div class="divTitulosPopulares">
+                   <h2 class="tituloPopulares">Destinos populares</h2> 
+                </div>
+                <div class="conteinerDestinos">
+                    <div class="destino">
+                        <a class="destinoLink" href="/pages/travelplans.html">
+                            <p class="nombreDestino">Punta Cana</p>
+                            <img class="destinoIMG" src="/assets/img/punta_cana.jpg" alt="playa de Punta Cana">
+                        </a>
+                    </div>
+                    <div class="destino">
+                        <a class="destinoLink" href="/pages/travelplans.html">
+                            <p class="nombreDestino">Paris</p>
+                            <img class="destinoIMG" src="/assets/img/paris.jpg" alt="playa de Punta Cana">
+                        </a>
+                    </div>
+                    <div class="destino">
+                        <a class="destinoLink" href="/pages/travelplans.html">
+                            <p class="nombreDestino">Tokio</p>
+                            <img class="destinoIMG" src="/assets/img/tokio.jpg" alt="playa de Punta Cana">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <span>© 2025 todos los derechos reservados</span>
     </footer>
 </body>
 </html>
