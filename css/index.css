@@ -20,3 +20,7 @@
     font-family: var(--title-font);
     color: var(--extra-color);
 }
+
+nav{
+    background-color: black;
+}
