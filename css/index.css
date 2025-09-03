@@ -12,11 +12,13 @@
     --GoDo-font: "Gowun Dodum", sans-serif;
 }
 
-.bannerSafari{
-    width: 100%;
-    height: 400px; 
-    display: block;
+/*.titulo_principal{
+    font-family: var(--title-font);
+    color: var(--extra-color);
+}
 
+nav{
+    background-color: black;
 }
 
 .divTitulosPopulares{
