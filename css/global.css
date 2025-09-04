@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
@@ -20,6 +19,7 @@
 }
 
 body {
+    font-family: var(--GoDo-font);
     background-color: var(--primary-color);
     height: 800px;
     width: 100%;
@@ -125,7 +125,8 @@ nav a {
     padding: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) 
+{
     .contenedor-externo {
         width: 100%;
     }
@@ -145,3 +146,4 @@ nav a {
         flex-wrap: wrap;
         font-size: 12px;
     }
+}
