@@ -33,11 +33,12 @@ body {
     height: 100%;
 }
 
-header {
+h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    font-family: helvetica, sans-serif;
 }
 
 main {
@@ -79,6 +80,15 @@ main {
     line-height: 50px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.safari-titulo {
+    font-family: "gf_Fleur_De_Leah variant0", Tofu; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-stretch: normal;
+    text-size:48px;
+    text-decoration:none;
 }
 
 
