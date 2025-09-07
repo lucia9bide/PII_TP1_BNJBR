@@ -44,9 +44,11 @@
                     <div class="campoNomApell">
                         <label for="firstname">Nombre: </label>
                         <input size="30" type="text" name="firstname" id="firstname">
+                        <span class="mensaje"></span>
                     
                         <label for="lastname">Apellido: </label>
                         <input size="30" type="text" name="lastname" id="lastname">
+                        <span class="mensaje"></span>
                     </div>
 
                     <div class="campoPais">
@@ -80,7 +82,8 @@
 
                     <div class="campoEmail">
                         <label for="email">Ingrese su email:</label><br>
-                        <input type="email" name="mail" id="mail">
+                        <input type="email" name="email" id="email" required>
+                        <span class="mensaje"></span> <!--lugar donde mostrar el feedback -->
                     </div>
 
                     <div class="campoTel">
@@ -117,6 +120,7 @@
                     <input type="reset" value="Borrar">
                 </form>
 
+                <button type="button" id="validarBtn">Validar</button>
             </section>
 
         </main>
