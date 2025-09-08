@@ -26,6 +26,11 @@
 
 }
 
+.sectionForm label
+{
+    color: var(--extra-color);
+    font-weight: bold;
+}
 .sectionForm
 {
     display: flex;
@@ -33,25 +38,96 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .sectionForm div
 {
     margin-top: 10px;
 }
 
-.campoDocumentacion
+fieldset 
+{
+    border: 2px solid var(--extra-color); 
+    border-radius: 10px;                 
+    padding: 15px;                        
+    margin-bottom: 20px;                  
+    background-color: var(--primary-color); 
+}
+fieldset legend 
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--extra-color);
+    padding: 0 5px; 
+}
+
+.campoEmail 
 {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.campoPreferencia
+{
+    border-radius: 10px;
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.campoConsulta
+{
+    display: block;
+    margin-top: 8px;
+}
+
+.mensaje
+{
+    font-size: 14px;
+    margin-left: 5px;
+}
+button 
+{
+    background: var(--extra-color);
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover 
+{
+    background-color: var(--text-color)
 }
 
 footer
 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: var(--text-color);
-  text-align: center;
-  padding: 1rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+textarea 
+{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 120px;
+}
+.comentario 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contenedor-externo 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }

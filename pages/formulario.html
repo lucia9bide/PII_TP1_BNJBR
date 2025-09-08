@@ -41,86 +41,124 @@
             <section class="sectionForm">
                 <form action="https://formspree.io/f/movnpjko" method="POST" target="_blank">
 
-                    <div class="campoNomApell">
-                        <label for="firstname">Nombre: </label>
-                        <input size="30" type="text" name="firstname" id="firstname">
-                        <span class="mensaje"></span>
-                    
-                        <label for="lastname">Apellido: </label>
-                        <input size="30" type="text" name="lastname" id="lastname">
-                        <span class="mensaje"></span>
-                    </div>
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <div class="campoNom">
+                            <label for="firstname">Nombre: </label>
+                            <input size="30" type="text" name="firstname" id="firstname">
+                            <span class="mensaje"></span>
+                        </div>
+                        
+                        <div class="campoApell">
+                            <label for="lastname">Apellido: </label>
+                            <input size="30" type="text" name="lastname" id="lastname">
+                            <span class="mensaje"></span>
+                        </div>
 
-                    <div class="campoPais">
-                        <label for="country">Seleccione su pais</label>
-                        <select id="country" name="country" required>
-                            <option value="" disabled selected> </option>
-                            <option value="argentina">Argentina</option>
-                            <option value="brasil">Brasil</option>
-                            <option value="chile">Chile</option>
-                            <option value="mexico">México</option>
-                            <option value="espana">España</option>
-                            <option value="eeuu">Estados Unidos</option>
-                            <option value="canada">Canadá</option>
-                        </select>
-                    </div>
+                        <div class="campoEdad">
+                            <label for="edad">Ingrese su edad: </label>
+                            <input type="number" name="edad" id="edad">
+                            <span class="mensaje"></span>
+                        </div>
 
-                    <!--validar que el dni o el pasaporte sean numeros-->
-                    <div class="campoDocumentacion">
-                        <label for="identificacion">Seleccione tipo de documento</label>
-                        <input type="radio" name="indentificacion" value="1">DNI
-                        <input type="radio" name="indentificacion" value="2">Pasaporte
-                        <!--validar-->
-                        <label for="documentacion">Ingrese documentación</label>
-                        <input type="text" name="documentacion" id="documentacion">
-                    </div>
+                        <div class="campoEmail">
+                            <label for="email">Ingrese su email:</label><br>
+                            <input type="email" name="email" id="email" required>
+                            <span class="mensaje"></span> <!--lugar donde mostrar el feedback -->
+                        </div>
 
-                    <div class="campoEdad">
-                        <label for="edad">Ingrese su edad: </label>
-                        <input type="number" name="edad">
-                    </div>
+                        <div class="campoTel">
+                            <label for="numberTel">Ingrese un número de teléfono: </label>
+                            <input size="30" type="tel" name="numberTel" id="numberTel">
+                            <span class="mensaje"></span>
+                        </div>
 
-                    <div class="campoEmail">
-                        <label for="email">Ingrese su email:</label><br>
-                        <input type="email" name="email" id="email" required>
-                        <span class="mensaje"></span> <!--lugar donde mostrar el feedback -->
-                    </div>
+                        <div class="campoGenero">
+                            <label for="genderbox">Seleccione su género</label>
+                            <select name="genderbox" id="genderbox" required>
+                                <option value="" disabled selected>Género</option>
+                                <option value="1">Femenino</option>
+                                <option value="2">Masculino</option>
+                                <option value="3">No Binarie</option>
+                                <option value="4">Otro</option>
+                            </select>
+                        </div>
 
-                    <div class="campoTel">
-                        <label for="numberTel">Ingrese un número de teléfono: </label>
-                        <input size="30" type="tel" name="numberTel" id="numberTel">
-                    </div>
+                        <div class="campoPais">
+                            <label for="country">Seleccione su pais de origen</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>Origen</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="bolivia">Bolivia</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="canada">Canadá</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="cuba">Cuba</option>
+                                <option value="costarica">Costa Rica</option>
+                                <option value="ecuador">Ecuador</option>
+                                <option value="eeuu">Estados Unidos</option>
+                                <option value="honduras">Honduras</option>
+                                <option value="haiti">Haití</option>
+                                <option value="mexico">México</option>
+                                <option value="peru">Peru</option>
+                                <option value="panama">Panamá</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="republicadominicana">Republica Dominicana</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="venezuela">Venezuela</option>
+                            </select>
+                        </div>
+                    </fieldset>
 
-                    <div class="campoGenero">
-                        <label for="genderbox">Seleccione su género</label>
-                        <select name="genderbox" id="genderbox">
-                            <option value="" disabled selected> </option>
-                            <option value="1">Femenino</option>
-                            <option value="2">Masculino</option>
-                            <option value="3">No Binarie</option>
-                            <option value="4">Otro</option>
-                        </select>
-                    </div>
+                    <fieldset>
+                        <legend>Datos sobre el viaje</legend>
+                        <div class="campoDestino">
+                            <label for="destino">Seleccione su destino deseado a viajar</label>
+                            <select id="destino" name="destino" required>
+                                <option value="" disabled selected>Destino</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="mexico">México</option>
+                                <option value="espana">España</option>
+                                <option value="eeuu">Estados Unidos</option>
+                                <option value="canada">Canadá</option>
+                            </select>
+                        </div>
 
-                    <div class="campoConsulta">
-                        <select name="consultabox" id="consultabox">
-                            <option value="" disabled selected>Tipo de Consulta</option>
-                            <option value="1">Dudas por paquete de viajes</option>
-                            <option value="2">Requerir información</option>
-                            <option value="3">Problemas con pagos</option>
-                            <option value="4">Documentación requerida</option>
-                            <option value="5">Otro</option>
-                        </select>
+                        <div class="campoPreferencia">
+                            <label>Cual es su Motivo de viaje</label><br>
+                            <input type="checkbox"> Relajarse
+                            <input type="checkbox"> Conocer otras culturas
+                            <input type="checkbox"> Visitar a algun conocido/a
+                            <input type="checkbox"> Otro
+                        </div>
 
-                        <label for="comentario">Consultas:</label>
-                        <textarea name="comentario" placeholder="ingrese su consulta..."></textarea>
-                    </div>
+                        <div class="campoConsulta">
+                            <label for="consultabox">Tipo de Consulta:</label>
+                            <select name="consultabox" id="consultabox" required>
+                                <option value="" disabled selected></option>
+                                <option value="1">Dudas por paquete de viajes</option>
+                                <option value="2">Requerir información</option>
+                                <option value="3">Problemas con pagos</option>
+                                <option value="4">Documentación requerida</option>
+                                <option value="5">Otro</option>
+                            </select>
+                        </div>
 
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
+                        <div class="comentario">
+                            <label for="comentario">Escriba su Consulta:</label>
+                            <textarea id="comentario" name="comentario" placeholder="ingrese su consulta..."></textarea>
+                            <span class="mensaje"></span>
+                        </div>
+
+                    </fieldset>
+
+                    <br><button type="submit">Enviar Consulta</button>
+
                 </form>
 
-                <button type="button" id="validarBtn">Validar</button>
             </section>
 
         </main>
