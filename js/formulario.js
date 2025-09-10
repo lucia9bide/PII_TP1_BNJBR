@@ -47,7 +47,7 @@ edad.addEventListener("input", () => {
         edad,
         mensajeEdad,
         val => val !== "" && val >= 1 && val <= 100,
-        "Ingrese una edad válida (1-100)"
+        "Ingrese una edad válida"
     )
 })
 

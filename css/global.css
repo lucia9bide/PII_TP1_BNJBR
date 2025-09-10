@@ -21,7 +21,7 @@
 body {
     font-family: var(--GoDo-font);
     background-color: var(--primary-color);
-    height: 800px;
+    height: 1050px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ main {
 
 .siteName {
     display: flex;
-    width: 60%;
+    width: 100%;
     background-color: var(--tertiary-color);
     justify-content: center;
     align-items: center;
@@ -71,6 +71,16 @@ main {
     padding: 0 auto;
 }
 
+.imgBanner
+{
+    background-image: url('/assets/img/safariBanner.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+    
 .links {
     display: flex;
     background-color: var(--barra-nav);
@@ -125,6 +135,14 @@ nav a {
     padding: auto;
 }
 
+footer
+{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: var(--text-color);
+    text-align: center;
+}
 @media only screen and (max-width: 768px) 
 {
     .contenedor-externo {

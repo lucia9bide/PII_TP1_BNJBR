@@ -99,15 +99,6 @@ button:hover
     background-color: var(--text-color)
 }
 
-footer
-{
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: var(--text-color);
-    text-align: center;
-    padding: 1rem;
-}
 
 textarea 
 {
@@ -121,13 +112,5 @@ textarea
 {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-.contenedor-externo 
-{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+    gap: 5px; /* hace espacio*/
 }
