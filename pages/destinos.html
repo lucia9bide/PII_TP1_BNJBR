@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/icons/SAFARI ico.ico">
-    <title>Formulario</title>
+    <title>Destinos</title>
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/destinos.css">
 </head>
-
 <body>
     <div class="contenedor-externo">
         <header>
@@ -34,13 +33,31 @@
             </div>
         </header>
         <main>
-            <p>hola que tal</p>
+            <div class="section-filtrado">
+                <h1 class="title-destinos">Destinos</h1>
+                <div class="buscador">
+                    <div class="filtrado-destinos">
+                        <div class="filtrado">
+                            <form class="buscador-barra" role="search">
+                                <input class="barra-buscar" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn-limpiar" type="submit">Limpiar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categorias-destinos">
+                    <div class="categorias"></div>
+                </div>
+            </div>
+
+            <section class="container">
+            </section>
         </main>
-            
         <footer>
             <span>&copy; 2025 todos los derechos reservados</span>
         </footer>
     </div>
+    <script type="module" src="/js/destinos.js"></script>
 </body>
-
 </html>

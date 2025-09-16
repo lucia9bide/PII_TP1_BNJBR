@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
@@ -25,6 +24,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    font-family: var(--GoDo-font);
 }
 
 .contenedor-externo {
@@ -40,8 +40,8 @@ header {
     width: 100%;
 }
 
-main {
-    padding: 20px;
+main{
+    min-height: 700px;
 }
 
 .encabezado {
@@ -125,6 +125,15 @@ nav a {
     padding: auto;
 }
 
+h1{
+    color: var(--tertiary-color);
+}
+
+footer{
+    display: flex;
+    justify-content:  center;
+}
+
 @media only screen and (max-width: 768px) {
     .contenedor-externo {
         width: 100%;
@@ -145,3 +154,4 @@ nav a {
         flex-wrap: wrap;
         font-size: 12px;
     }
+}

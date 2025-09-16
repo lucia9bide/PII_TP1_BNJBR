@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+:root {
+    --primary-color: #F2F2F2;
+    --secondary-color: #D99873;
+    --tertiary-color: #D97E6A;
+    --extra-color: #A64E46;
+    --text-color: #260101;
+    --barra-nav: black;
+
+    --title-font: "Encode Sans SC", sans-serif;
+    --GoDo-font: "Gowun Dodum", sans-serif;
+}
+
+body {
+    height: 1350px;
+    user-select: none;
+}
+
+.section-filtrado{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1% 5% 1% 5%;
+    align-content: center;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.buscador{
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+}
+
+.barra-buscar{
+    min-height: 30px;
+    min-width: 400px;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: var(--GoDo-font);
+    font-size: 15px;
+}
+
+.genre-button{
+    font-family: var(--GoDo-font);
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    background-color: var(--extra-color);
+    border: none;
+    color: var(--primary-color);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.genre-button:hover{
+    transform: scale(1.1);
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5% 0 5%;
+    justify-content:flex-start;
+}
+
+.tarjetas{
+    width: 250px;
+    height: 200px;
+    margin: 1.5rem;
+    border-radius: 5%;
+    transition: 0.2s;
+}
+
+.tarjetas:hover{
+    transform: scale(1.05);;
+    box-shadow: 5px 5px 5px 5px rgba(41, 40, 40, 0.4);
+}
+
+.card-img-top{
+    width: 250px;
+    height: 200px;
+    border-radius: 5%;
+}
+
+.verMas{
+    text-decoration: none;
+    color: var(--extra-color);
+}
+
+.textos{
+    font-family: var(--title-font);
+    text-align: center;
+}
