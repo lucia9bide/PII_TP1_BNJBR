@@ -14,35 +14,34 @@ const mensajeComentario = comentario.nextElementSibling
 
 //funcon para valdar todo
 function validarCampo(input, mensajeElemento, condicion, mensajeError) {
-    if (condicion(input.value.trim())) //toma el valor que escribió el usuario y quita los espacios al inicio y al final, para no marcar error si solo escribió un espacio
-    {
-        mensajeElemento.textContent = 'Correcto'
-        mensajeElemento.style.color = 'green'
+    if (condicion(input.value.trim())){ //toma el valor que escribió el usuario y quita los espacios al inicio y al final, para no marcar error si solo escribió un espacio
+        mensajeElemento.textContent = "Correcto"
+        mensajeElemento.style.color = "green"
     } else {
         mensajeElemento.textContent = mensajeError
-        mensajeElemento.style.color = 'red'
+        mensajeElemento.style.color = "red"
     }
 }
 
-nombre.addEventListener('input', () => {
+nombre.addEventListener("input", function (){
     validarCampo(
         nombre, 
         mensajeNombre, 
-        val => /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(val), 
-        "Nombre inválido, solo puede contener letras"
+        val => /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,}$/.test(val), 
+        "Nombre inválido, (más de 3 caracteres y solo puede contener letras)"
     )
 })
 
-apellido.addEventListener('input', () => {
+apellido.addEventListener("input", function(){
     validarCampo(
         apellido, 
         mensajeApellido, 
-        val => /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(val), 
-        "Apellido inválido, solo puede contener letras"
+        val => /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,}$/.test(val), 
+        "Apellido inválido, (más de 3 caracteres y solo puede contener letras)"
     )
 })
 
-edad.addEventListener("input", () => {
+edad.addEventListener("input", function (){
     validarCampo(
         edad,
         mensajeEdad,
@@ -51,14 +50,14 @@ edad.addEventListener("input", () => {
     )
 })
 
-email.addEventListener('input', () => {
+email.addEventListener('input', function (){
     validarCampo(email, mensajeEmail,
         val => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(val), //regex que comprueba si el email tiene un formato correcto.
-        "Email inválido"
+        "Email inválido (debe contener @ y dominio)"
     )
 })
 
-telefono.addEventListener("input", () => {
+telefono.addEventListener("input", function() {
     validarCampo(
         telefono,
         mensajeTelefono,
@@ -67,7 +66,7 @@ telefono.addEventListener("input", () => {
     )
 })
 
-comentario.addEventListener("input", () => {
+comentario.addEventListener("input", function() {
     validarCampo(
         comentario,
         mensajeComentario,

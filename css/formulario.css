@@ -13,26 +13,23 @@
     --GoDo-font: "Gowun Dodum", sans-serif;
 }
 
-.sectionTitulo
-{
+.sectionTitulo {
     display: flex;
     justify-content:center;
     align-items: center;
 }
-.tituloFormulario
-{
+
+.tituloFormulario {
     font-family: var(--title-font);
     color: var(--extra-color);
 
 }
 
-.sectionForm label
-{
+.sectionForm label {
     color: var(--extra-color);
     font-weight: bold;
 }
-.sectionForm
-{
+.sectionForm {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -40,77 +37,81 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.sectionForm div
-{
+.sectionForm div {
     margin-top: 10px;
 }
 
-fieldset 
-{
+fieldset {
     border: 2px solid var(--extra-color); 
     border-radius: 10px;                 
     padding: 15px;                        
     margin-bottom: 20px;                  
     background-color: var(--primary-color); 
 }
-fieldset legend 
-{
+
+fieldset legend {
     font-size: 18px;
     font-weight: bold;
     color: var(--extra-color);
     padding: 0 5px; 
 }
 
-.campoEmail 
-{
+body.oscuro fieldset {
+    background-color: #202020; /*para que cuando se ponga en modo ocuro cambie tambien el fieldset*/
+    color: #ffffff; 
+}
+
+.campoEmail {
     display: flex;
     align-items: center;
     gap: 2px;
 }
 
-.campoPreferencia
-{
+.campoPreferencia {
     border-radius: 10px;
     display: block; 
     margin-bottom: 5px; 
 }
 
-.campoConsulta
-{
+.campoConsulta {
     display: block;
     margin-top: 8px;
 }
 
-.mensaje
-{
+.mensaje {
     font-size: 14px;
     margin-left: 5px;
 }
-button 
-{
+
+button {
     background: var(--extra-color);
     color: white;
     padding: 5px;
     font-size: 15px;
     cursor: pointer;
+    border-radius: 5px;
+    border: none;
 }
-button:hover 
-{
+
+button:hover {
     background-color: var(--text-color)
 }
 
-
-textarea 
-{
+textarea {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     padding: 8px;
     height: 120px;
 }
-.comentario 
-{
+.comentario {
     display: flex;
     flex-direction: column;
     gap: 5px; /* hace espacio*/
+}
+
+select:invalid {
+    border: 1px solid;
+    border-color: rgb(248, 16, 16);
+    border-radius: 4px;
 }
