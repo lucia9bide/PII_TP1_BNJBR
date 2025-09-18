@@ -34,7 +34,7 @@
     .encabezado {display:none;}
     .hamburguesa {dispay:block;}
     
-    nav {
+    nav.active {
         display: flex;
         background-color: var(--barra-nav);
         width: 80%;
@@ -162,3 +162,14 @@ nav a {
     padding: auto;
 }
 
+.hamburgesa {
+    display:none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.2ex;
+}
