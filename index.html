@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,17 @@
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
+
 </head>
+
 <body>
-    <button id="CambiarTema">Cambia de tema</button>
-    <script src="/js/index.js"></script>
 
     <div class="contenedor-externo">
         <header>
-            <div class="encabezado">  
+            <div class="encabezado">
                 <div class="siteName">
                     <div class="imgBanner">
-                        
+                        <button id="CambiarTema">Cambia de tema</button>
                     </div>
                 </div>
             </div>
@@ -37,11 +37,33 @@
         <main>
             <section>
                 <div class="title">
-                    <h1 class="titulo_principal">Titulo</h1>
+                    <h1 class="titulo_principal">Descubrí el mundo con Safari</h1>
+                    <p id="parrafo">Viajes únicos, recuerdos para toda la vida, donde cada paso se convierte en una historia para contar.</p>
                 </div>
             </section>
+
             <section>
-                <p>parrafo</p>
+                <div class="carrusel">
+                    <h2>Los viajes mas elegidos por la gente</h>
+                    <div class="imagenes">
+                        <img src="/assets/img/punta_cana.webp" alt="Playa">
+                        <img src="/assets/img/paris.webp" alt="Ciudad">
+                        <img src="/assets/img/tokio.webp" alt="Montaña">
+                    </div>
+                    <div class="botoncarrusel">
+                        <button id="anterior">&#10094;</button>
+                        <button id="siguiente">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="info-carrusel">
+                    <h3 id="nombreImagen"></h3>
+                    <p id="descripcionImagen"></p>
+                </div>
+            
+                <div class="indicador">
+                    <span id="indice"></span>
+                </div>
             </section>
         </main>
 
@@ -61,14 +83,17 @@
                     <h3>Contacto</h3>
                     <p>Email: SafariViajes@gmail.com</p>
                     <p>Tel: <a href="tel:+5403412724611" id="mapayTel"> +54 11 1234 5678</a></p>
-                    <p>Dirección:<a href="https://maps.app.goo.gl/LEhY54n46UQj25HG9" id="mapayTel">Zeballos 1341, Rosario, Santa Fe</a></p>
+                    <p>Dirección:<a href="https://maps.app.goo.gl/LEhY54n46UQj25HG9" id="mapayTel"
+                            target="_blank">Zeballos 1341, Rosario, Santa Fe</a></p>
                 </div>
 
                 <div class="footer-section">
                     <h3>Seguinos</h3>
                     <div class="socials">
-                        <a href="https://www.facebook.com/UTNFRRO/about" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/utnsantafe/?hl=es-es" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/UTNFRRO/about" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/utnsantafe/?hl=es-es" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
                         <a href="https://x.com/frbautn" target="_blank"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
@@ -79,5 +104,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="/js/index.js"></script>
 </body>
+
 </html>

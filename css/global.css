@@ -163,7 +163,7 @@ nav a {
     background-color: var(--secondary-color);
     color: #f1f1f1;
     padding: 40px 20px 20px;
-    margin-top: 50px;
+    margin: 0;
     bottom: 0;
     left: 0;
     width: 100%;
