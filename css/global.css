@@ -21,10 +21,34 @@
 body {
     font-family: var(--GoDo-font);
     background-color: var(--primary-color);
-    height: 800px;
+    height: 1050px;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+body.oscuro {
+    background-color: #1a1919;
+    color: #ffffff;
+}
+
+#CambiarTema {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: var(--extra-color);
+    color: white;
+    padding: 10px 20px;
+    font-family: var(--GoDo-font);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+#CambiarTema:hover {
+    background-color: #555;
 }
 
 .contenedor-externo {
@@ -63,7 +87,7 @@ main {
 
 .siteName {
     display: flex;
-    width: 60%;
+    width: 100%;
     background-color: var(--tertiary-color);
     justify-content: center;
     align-items: center;
@@ -71,6 +95,16 @@ main {
     padding: 0 auto;
 }
 
+.imgBanner
+{
+    background-image: url('/assets/img/safariBanner.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+    
 .links {
     display: flex;
     background-color: var(--barra-nav);
@@ -123,6 +157,86 @@ nav a {
     text-transform: uppercase;
     margin: auto;
     padding: auto;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: #f1f1f1;
+    padding: 40px 20px 20px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    background-color: var(--extra-color);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: var(--extra-color);
+}
+
+.socials {
+    display: flex;
+    justify-content: center; /* centrado horizontal */
+    align-items: center;     /* centrado vertical */
+    gap: 12px;           
+}
+.socials i {
+    font-size: 28px;
+    color: #f1f1f1;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.socials i:hover {
+    color: var(--extra-color);
+    transform: scale(1.2); /* efecto zoom */
+}
+
+#mapayTel{
+    color: #f1f1f1;
+}
+#mapayTel:hover{
+    color: var(--extra-color);
+    transform: scale(1.2);
+}
+
+body.oscuro footer {
+    background-color: #1e1e1e; /*para que cuando se ponga en modo ocuro cambie tambien */
+    color: #ffffff; 
 }
 
 @media only screen and (max-width: 768px) 
