@@ -79,7 +79,7 @@
 
                     <div class="campoEdad">
                         <label for="edad">Ingrese su edad: </label>
-                        <input type="number" name="edad">
+                        <input type="number" name="edad" id="edad">
                     </div>
 
                     <div class="campoEmail">
@@ -114,10 +114,10 @@
                         </select>
 
                         <label for="comentario">Consultas:</label>
-                        <textarea name="comentario" placeholder="ingrese su consulta..."></textarea>
+                        <textarea name="comentario" placeholder="ingrese su consulta..." id="comentario"></textarea>
                     </div>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="btn-enviar">
                     <input type="reset" value="Borrar">
                 </form>
 
@@ -130,7 +130,9 @@
         </footer>
     </div>
 
-    <script src="/js/formulario.js"></script>
+    <script src="../js/formulario.js"></script>
+
+    <script src="../js/formSubmit.js"></script>
 
 </body>
 </html>
