@@ -1,3 +1,4 @@
+var form = getElementById("formulario")
 var consulta.nombre = getElementById("firstname").value
 consulta.apellido   = getElementById("lastname").value
 consulta.pais       = getElementById("country").value
@@ -12,8 +13,9 @@ consulta.tipoConsul = getElementById("consultabox").value
 consulta.textoConsul= getElementById("comentario").value
 // !!!! hay que agregar el id="comentario" a esa parte de formulario.html!!! Si no, no lo va a agarrar.
 
-function sendToServer()
+function sendToServer(event)
 {
+    event.preventDefault();
     var conjson = JSON.stringify(consulta)
     const response = await fetch('http://localhost:3000/submission', {
                 method: 'POST',
@@ -24,6 +26,5 @@ function sendToServer()
             });
 }
 
-var btn = getElementById("btn-enviar")
-btn.addEventListener("click", sendToServer)
+form.addEventListener("submit", sendToServer)
 // !!!! hay que agregar el id="btn-enviar" a esa parte de formulario.html!!! Si no, no lo va a agarrar.
