@@ -32,8 +32,9 @@
     width:100%;
     }
     .nav {display:none;}
+  
     .hamburguesa {display:block;}
-    
+  
     nav.active {
         display: flex;
         width: 80%;
