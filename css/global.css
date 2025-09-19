@@ -208,13 +208,13 @@ nav a {
 }
 
 .footer {
-    background-color: var(--secondary-color);
-    color: #f1f1f1;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 40px 20px 20px;
     margin: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 .footer-container {
@@ -248,7 +248,7 @@ nav a {
 }
 
 .footer-section ul li a {
-    color: #f1f1f1;
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -265,7 +265,7 @@ nav a {
 }
 .socials i {
     font-size: 28px;
-    color: #f1f1f1;
+    color: var(--text-color);
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -275,7 +275,7 @@ nav a {
 }
 
 #mapayTel{
-    color: #f1f1f1;
+    color: var(--text-color);
 }
 #mapayTel:hover{
     color: var(--extra-color);

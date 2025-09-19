@@ -18,6 +18,11 @@ body {
     user-select: none;
 }
 
+.title-destinos{
+    font-family: var(--title-font);
+    color: var(--extra-color);
+}
+
 .section-filtrado{
     display: flex;
     flex-wrap: wrap;
