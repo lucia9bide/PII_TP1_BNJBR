@@ -1,26 +1,24 @@
-<!--Esto lo hice por si somos una empresa tener una pagina dedicada a nosotros yk-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/icons/SAFARI ico.ico">
-    <title>About Us</title>
+    <title>Sobre nosotros</title>
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/aboutus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
     <button id="CambiarTema">Cambia de tema</button>
-    
     <div class="contenedor-externo">
-         <header>
+        <header>
             <script src="../js/hamb-btn.js"></script> 
             <div class="encabezado">
                 <div class="logo">
                     <div class="borrar-despues">Logo acá</div>
                 </div>
+            </div>
          <header>
             <div class="encabezado">  
                 <div class="siteName">
@@ -36,7 +34,7 @@
                 <nav class="nav">
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/travelplans.html">Plan</a></li>
+                        <li><a href="../pages/travelplans.html">Destinos</a></li>
                         <li><a href="../pages/formulario.html">Formulario</a></li>
                         <li><a href="../pages/aboutus.html">About us</a></li>
                     </ul>
@@ -44,8 +42,71 @@
             </div>
         </header>
         <main>
+            <div class="titleAU">
+                <h2 class="tituloAU">Conócenos</h2>
+            </div>
+            <div class="textos">
+                <p class="texto">En <strong style="color: #A64E46;">Safari</strong>, somos un equipo apasionado por los viajes y las experiencias únicas. 
+                    Desde el 2025, ayudamos a nuestros clientes a descubrir destinos increíbles, 
+                    brindando servicios personalizados y de calidad.
+                </p>
+                <h4 class="tituloAU">¿Por qué elegirnos?</h4>
+                <ul class="lista">
+                    <li class="texto">Experiencia y conocimiento en destinos internacionales y locales.</li>
+                    <li class="texto">Atención personalizada para cada cliente.</li>
+                    <li class="texto">Flexibilidad y seguridad en todos nuestros servicios.</li>
+                </ul>
+                <p class="texto">¡Únete a nosotros y empieza tu próxima aventura hoy mismo!</p>
+            </div>
+            <div class="titleAU">
+                <h2 class="tituloAU">Nuestro Equipo</h2>
+            </div>
+            <div class="divTeam">
+                <div class="cardTeam">
+                    <a class="linkTeam" href="https://github.com/lucia9bide" target="_blank">
+                        <img class="imgTeam" src="/assets/img/fotoCard_bide_lucia.webp" alt="foto lucia bide">
+                    </a>
+                    <h3 class="titleTeam">Bide Lucia</h3>
+                </div>
+                <div class="cardTeam">
+                    <a class="linkTeam" href="https://github.com/luciaromeroo" target="_blank">
+                        <img class="imgTeam" src="/assets/img/fotoCard_romero_lucia.webp" alt="foto lucia romero">
+                    </a>
+                    <h3 class="titleTeam">Romero Lucia</h3>
+                </div>
+                <div class="cardTeam">
+                    <a class="linkTeam" href="https://github.com/Nisstaed" target="_blank">
+                        <img class="imgTeam" src="/assets/img/fotoCard_JB_michael.webp" alt="foto Michaël Jean-Baptiste">
+                    </a>
+                    <h3 class="titleTeam">Jean-Baptiste Michaël</h3>
+                </div>
+                <div class="cardTeam">
+                    <a class="linkTeam" href="https://github.com/IMN2400" target="_blank">
+                        <img class="imgTeam" src="/assets/img/fotoCard_napal_ignacio.webp" alt="foto ignacio napal">
+                    </a>
+                    <h3 class="titleTeam">Napal Ignacio</h3>
+                </div>
+            </div>
+            <div class="titleAU">
+                <h2 class="tituloAU">Testimonial</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="reseñaImg">
+                        <img class="reseña" src="/assets/img/reseña1.webp" alt="reseña">
+                    </div>
+                    <div class="reseñaImg">
+                        <img class="reseña" src="/assets/img/reseña2.webp" alt="reseña">
+                    </div>
+                    <div class="reseñaImg">
+                        <img class="reseña" src="/assets/img/reseña3.webp" alt="reseña">
+                    </div>
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
         </main>
-                <footer class="footer">
+        <footer class="footer">
             <div class="footer-container">
                 <div class="footer-section">
                     <h3>Explora</h3>
@@ -79,8 +140,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="/js/aboutus.js"></script>
     <script src="/js/index.js"></script>
 </body>
-
 </html>
