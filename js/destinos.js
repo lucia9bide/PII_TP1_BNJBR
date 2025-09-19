@@ -152,7 +152,7 @@ const createCards = (destinosFiltrados) =>{
                   <div class="card-body">
                     <div class="textos">
                       <h5 class="">${destinos.title}</h5>
-                        <!--<small class="card-genre">${destinos.genre}</small>-->
+                        <small class="card-genre">usd$${destinos.price}</small>
                     </div>
                     <!--<p class="card-text">${destinos.description.slice(0, 100)}...</p>-->
                   </div>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+:root {
+    --primary-color: #F2F2F2;
+    --secondary-color: #D99873;
+    --tertiary-color: #D97E6A;
+    --extra-color: #A64E46;
+    --text-color: #260101;
+    --barra-nav: black;
+
+    --title-font: "Encode Sans SC", sans-serif;
+    --GoDo-font: "Gowun Dodum", sans-serif;
+}
+
+body{
+    height: auto;
+}
+
+.titleAU{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px 0;
+}
+
+.tituloAU{
+    font-family: var(--title-font);
+    color: var(--extra-color);
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.texto{
+    font-family: var(--GoDo-font);
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.lista{
+    margin-top: 10px;
+    padding-left: 55px;
+}
+
+.divTeam{
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin: 20px;
+    gap: 20px;
+}
+
+.cardTeam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(222, 218, 215);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+
+}
+.cardTeam:hover {
+    transform: rotateY(-15deg);
+    box-shadow: 15px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.imgTeam{
+    width: 250px;
+    height: 250px;
+    border-radius:12px 12px 0 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.reseña{
+    display: flex;
+    height: 220px;
+    width: 520px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(194, 142, 112, 0.8);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+@media (max-width:992px)
+{
+    body {
+        font-size: 1.5 vw;}
+    .contenedor-externo {
+        grid-template-columns: 1fr 1fr 1fr; }
+        
+    .divTeam{
+        margin: 10px;
+        gap: 20px;
+    }
+    .cardTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 160px;
+        background: rgb(222, 218, 215);
+        border-radius: 12px;
+    }
+
+    .imgTeam{
+        width: 160px;
+        height: 150px;
+        border-radius:12px 12px 0 0;
+    }
+}
+
+@media (max-width:768px) {
+    .contenedor-externo {
+        grid-template-columns: 1fr 1fr;
+    width:100%;
+    }
+    .nav {display:none;}
+    .hamburguesa {display:block;}
+    
+    nav.active {
+        display: flex;
+        width: 80%;
+        line-height: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width:480px){
+    .contenedor-externo {
+        grid-template-columns: 1fr;
+    }
+    button {padding:1rem;}
+
+    .divTeam{
+        margin: 10px;
+        gap: 20px;
+    }
+    .cardTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 110px;
+        background: rgb(222, 218, 215);
+        border-radius: 12px;
+    }
+
+    .titleTeam{
+        font-size: 15px;
+    }
+
+    .imgTeam{
+        width: 100px;
+        height: 100px;
+        border-radius:12px 12px 0 0;
+    }
+
+    .reseña{
+        display: flex;
+        height: 200px;
+        width: 370px;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        font-size: 10px;
+        z-index: 10;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+    }
+}
