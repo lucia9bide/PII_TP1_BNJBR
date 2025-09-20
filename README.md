@@ -37,8 +37,8 @@ Una vez realizado te quedará el archivo ZIP y la carpeta con los documentos lis
     ✔ Transformaciones 3D (perspective, rotateX/Y)<br>
     ✔ Light/Dark mode toggle con persistencia en localStorage<br>
 
-<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/d4f38ab4-ca32-4357-8fa3-7535e0d89cfc" />
-<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/cf3a6cdf-1ddc-4f6d-a78c-860527be0ff5" /><br>
+<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/bf020309-c7b4-4bb0-a0aa-199968c81957" />
+<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/d622228c-5383-4aaf-8206-4522d81e3201" /><br>
 
 ●  Extras implementados:<br>
     🔎 Buscador con filtrado en tiempo real.<br>
