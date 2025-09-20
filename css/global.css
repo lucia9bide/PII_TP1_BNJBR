@@ -141,7 +141,7 @@ body.oscuro {
 }
 
 .contenedor-externo {
-    width: 100%;
+    width: 80%;
     box-shadow: 5px 10px 15px 20px rgba(41, 40, 40, 0.4);
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
