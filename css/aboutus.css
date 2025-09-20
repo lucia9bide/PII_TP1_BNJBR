@@ -15,6 +15,7 @@
 
 body{
     height: auto;
+    color: var(--text-color);
 }
 
 .titleAU{
@@ -37,7 +38,6 @@ body{
 
 .texto{
     font-family: var(--GoDo-font);
-    color: var(--text-color);
     font-size: 18px;
 }
 

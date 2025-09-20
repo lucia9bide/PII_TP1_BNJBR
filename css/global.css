@@ -29,29 +29,77 @@
 @media (max-width:768px) {
     .contenedor-externo {
         grid-template-columns: 1fr 1fr;
-    width:100%;
+        width:100%;
     }
-    .nav {display:none;}
+    #nav {
+        display:none;
+        position:absolute;
+        top:300px;
+        left:0;
+        width: 100%;
+        z-index:1000;
+        flex-direction: column;
+        transition: transform 1s ease-in-out;
+    }
   
-    .hamburguesa {display:block;}
+    .hamburguesa button {
+        display:block;
+        background: var(--secondary-color);
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
   
-    nav.active {
+    #nav.active {
         display: flex;
-        width: 80%;
+        position: top;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
         line-height: 50px;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 12px;
+        transform: translateY(-50px);
     }
     
 }
 
-@media (max-width:480px){
+@media (max-width:480px)
+{
     .contenedor-externo {
         grid-template-columns: 1fr;
     }
+
     button {padding:1rem;}
+
+    #nav.active ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #nav.active li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    body 
+    {
+        overflow-x: hidden;
+    }
 }
+
+@media (min-width: 769px) 
+{
+    .hamburguesa {
+        display: none !important;
+    }
+    #nav {
+        display: flex !important;
+    }
+}
+
 
 body {
     font-family: var(--GoDo-font);
@@ -80,6 +128,7 @@ body.oscuro {
     border-radius: 5px;
     border: none;
     transition: background 0.3s ease;
+    z-index:1002;
 }
 
 #CambiarTema:hover {
@@ -111,6 +160,28 @@ main {
     flex-direction: row;
 }
 
+.hamburguesa {
+    display:none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 3rem;
+    height: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.2ex;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color)
+}
+
+@media (max-width:768px){
+    .hamburguesa{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+}
+
 .logo {
     width: 40%;
     background-color: var(--secondary-color);
@@ -133,7 +204,7 @@ main {
 
 .imgBanner
 {
-    background-image: url('/assets/img/safariBanner.webp');
+    background-image: url('../assets/img/safariBanner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,18 +266,6 @@ nav a {
     padding: auto;
 }
 
-.hamburgesa {
-    display:none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.2ex;
-}
-
 .footer {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -216,6 +275,7 @@ nav a {
     left: 0;
     width: auto;
     text-align: center;
+    margin-top:auto;
 }
 .footer-container {
     display: flex;
@@ -248,7 +308,7 @@ nav a {
 }
 
 .footer-section ul li a {
-    color: var(--text-color);
+    color: var(--tertiary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -282,7 +342,15 @@ nav a {
     transform: scale(1.2);
 }
 
-body.oscuro footer {
+body.oscuro footer  {
     background-color: #1e1e1e; /*para que cuando se ponga en modo ocuro cambie tambien */
     color: #ffffff; 
+}
+body.oscuro #mapayTel {
+	
+    color: var(--tertiary-color); 
+}
+
+body.oscuro .footer-section a {
+	color: var(--tertiary-color); 
 }
