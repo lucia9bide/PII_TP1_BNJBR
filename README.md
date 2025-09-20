@@ -1,17 +1,28 @@
-# PII_TP1_BNJBR
+# TRABAJO PRACTICO 1
+## Repositorio para el Trabajo Práctico n°1 de la asignatura Programación, Tecnicatura Universitaria en Programación.
+###  Participantes: Bide Bevacqua Lucia, Michaël Jean-Baptiste, Ignacio Martín Napal y Lucia Romero.
 
-Repositorio para el Trabajo Práctico n°1 de la asignatura Programación, Tecnicatura Universitaria en Programación.
+●  Descripción del proyecto:<br>
+    Nuestro proyecto simula un sitio de una empresa de viajes. Como tal, esta cuenta con un inicio, donde hay un pequeño guiño al cátalogo, una página donde pueden verse los productos, un formulario para consultas y la presentación de la empresa.<br>
 
--> Participantes: Bide Bevacqua Lucia, Michaël Jean-Baptiste, Ignacio Martín Napal y Lucia Romero.
+●  Tecnologías usadas:<br>
+    ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+    ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+    ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-●  Descripción del proyecto:
-    El trabajo consiste en hacer una página para una presunta empresa de viajes la cual ofrece planes con diversos destinos turísticos, guías para los mismos y una asesoría con 
-    enfoque al deseo por parte del usuario de visitar ciertos lugares que no se incluyan en los planes ya fromalizados.
 
-●  Tecnologías usadas:
+●  Intrucciones para ejecutar:<br>
 
-●  Intrucciones para ejecutar (que vaya de la mano con capturas de pantalla):
 
-●  Lista de funcionalidades implementadas:
+●  Lista de funcionalidades implementadas:<br>
+    ✔ Responsive con 4 breakpoints (PC, Laptop, Tablet, Mobile)<br>
+    ✔ Formulario con 6–8 campos<br>
+    ✔ Microinteracciones (hover, focus)<br>
+    ✔ Transformaciones 3D (perspective, rotateX/Y)<br>
+    ✔ Light/Dark mode toggle con persistencia en localStorage<br>
 
-●  Lista de extras implementados (si aplica):
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/d4f38ab4-ca32-4357-8fa3-7535e0d89cfc" />
+<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/cf3a6cdf-1ddc-4f6d-a78c-860527be0ff5" />
+
+●  Lista de extras implementados:<br>
+    🔎 Buscador con filtrado en tiempo real.
