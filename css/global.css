@@ -50,6 +50,10 @@
         cursor: pointer;
         padding: 10px;
     }
+	.imgBanner
+	{    
+		background-image: url('../assets/img/safariBannerMobile.webp');
+	}
   
     #nav.active {
         display: flex;
@@ -62,16 +66,7 @@
         flex-wrap: wrap;
         transform: translateY(-50px);
     }
-    
-}
-
-@media (max-width:480px)
-{
-    .contenedor-externo {
-        grid-template-columns: 1fr;
-    }
-
-    button {padding:1rem;}
+	
 
     #nav.active ul {
         flex-direction: column;
@@ -88,6 +83,16 @@
     {
         overflow-x: hidden;
     }
+    
+}
+
+@media (max-width:480px)
+{
+    .contenedor-externo {
+        grid-template-columns: 1fr;
+    }
+
+    button {padding:1rem;}
 }
 
 @media (min-width: 769px) 
