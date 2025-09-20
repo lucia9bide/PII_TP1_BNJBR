@@ -21,8 +21,8 @@
     ✔ Transformaciones 3D (perspective, rotateX/Y)<br>
     ✔ Light/Dark mode toggle con persistencia en localStorage<br>
 
-<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/d4f38ab4-ca32-4357-8fa3-7535e0d89cfc" />
-<img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/cf3a6cdf-1ddc-4f6d-a78c-860527be0ff5" />
+<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/d4f38ab4-ca32-4357-8fa3-7535e0d89cfc" />
+<img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/cf3a6cdf-1ddc-4f6d-a78c-860527be0ff5" />
 
 ●  Lista de extras implementados:<br>
     🔎 Buscador con filtrado en tiempo real.
