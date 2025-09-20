@@ -6,7 +6,6 @@ const dataDestinos = [
     image: "../assets/img/D_madrid.webp",
     genre: "Europa | España | Histórico | Solo Vuelo",
     price: 1000,
-    stock: 12,
   },
   {
     id: 2,
@@ -15,7 +14,6 @@ const dataDestinos = [
     image: "../assets/img/D_roma.webp",
     genre: "Europa | Italia | Turismo | Histórico | Solo Vuelo",
     price: 850,
-    stock: 6,
   },
   {
     id: 3,
@@ -24,7 +22,6 @@ const dataDestinos = [
     image: "../assets/img/D_londres.webp",
     genre: "Europa | Londres | Histórico | Solo Vuelo",
     price: 920,
-    stock: 93,
   },
   {
     id: 4,
@@ -33,7 +30,6 @@ const dataDestinos = [
     image: "../assets/img/D_paris.webp",
     genre: "Europa | Francia | Romántico | Turismo | Solo Vuelo",
     price: 950,
-    stock: 0,
   },
   {
     id: 5,
@@ -42,7 +38,6 @@ const dataDestinos = [
     image: "../assets/img/D_estambul.webp",
     genre: "Europa | Asia | Histórico | Solo Vuelo",
     price: 893,
-    stock: 86,
   },
   {
     id: 6,
@@ -51,7 +46,6 @@ const dataDestinos = [
     image: "../assets/img/D_rio_de_janeiro.webp",
     genre: "Latinoamérica | América | Brasil | Verano | Solo Vuelo",
     price: 465,
-    stock: 35,
   },
   {
     id: 7,
@@ -60,7 +54,6 @@ const dataDestinos = [
     image: "../assets/img/D_new_york.webp",
     genre: "América | Estados Unidos | Turismo | Solo Vuelo",
     price: 1099,
-    stock: 65,
   },
   {
     id: 8,
@@ -69,7 +62,6 @@ const dataDestinos = [
     image: "../assets/img/D_ushuaia.webp",
     genre: "Latinoamérica | América | Argentina | Invierno | Turismo | Solo Vuelo",
     price: 550,
-    stock: 10,
   },
   {
     id: 9,
@@ -78,7 +70,6 @@ const dataDestinos = [
     image: "../assets/img/D_tailandia_ko_phi_phi.webp",
     genre: "Asia | Thailandia | Verano | Turismo | Solo Vuelo",
     price: 850,
-    stock: 10,
   },
   {
     id: 10,
@@ -87,16 +78,14 @@ const dataDestinos = [
     image: "../assets/img/D_petra_jordania.webp",
     genre: "Oriente Medio | Asia | Jordania | Turismo",
     price: 1200,
-    stock: 10,
   },
   {
     id: 11,
     title: "Viaje Tanzania + tour todo incluido",
     description: " descripcion",
-    image: "../assets/img/D_tanzania.webp",
+    image: "../assets/img/D_Tanzania.webp",
     genre: "África | Tanzania | Turismos | Paquetes",
     price: 1200,
-    stock: 10,
   },
   {
     id: 11,
@@ -105,7 +94,6 @@ const dataDestinos = [
     image: "../assets/img/D_madagascar.webp",
     genre: "África | Madagascar | Turismos | Paquetes",
     price: 1200,
-    stock: 10,
   },
   {
     id: 12,
@@ -114,7 +102,6 @@ const dataDestinos = [
     image: "../assets/img/D_kiribati.webp",
     genre: "Oceanía | Kiribati | Turismos | Paquetes",
     price: 1200,
-    stock: 10,
   },
   {
     id: 13,
@@ -123,7 +110,6 @@ const dataDestinos = [
     image: "../assets/img/D_china_corea_japon.webp",
     genre: "Asia | China  | Corea del Sur  | Japón  | Turismos | Paquetes",
     price: 1200,
-    stock: 10,
   },
   {
     id: 13,
@@ -132,7 +118,6 @@ const dataDestinos = [
     image: "../assets/img/D_islas_marshall.webp",
     genre: "Ocenía | República de las Islas Marshall  | Turismos | Paquetes",
     price: 1200,
-    stock: 10,
   },    
 ];
 
@@ -147,8 +132,7 @@ const createCards = (destinosFiltrados) =>{
     return `<div class="tarjetas">
               <div class="card">
                 <div class="verMas">
-                  <img src="${destinos.image}" class="card-img-top" alt="Imagen de la pelicula ${destinos.title}">
-                    <!--${destinos.stock === 0? `<div class="sinStock">Sin stock</div>`: ""}-->
+                  <img src="${destinos.image}" class="card-img-top" alt="Imagen del viaje ${destinos.title}">
                   <div class="card-body">
                     <div class="textos">
                       <h5 class="">${destinos.title}</h5>
