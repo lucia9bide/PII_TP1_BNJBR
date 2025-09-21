@@ -1,9 +1,9 @@
 # TRABAJO PRACTICO 1
-## Repositorio para el Trabajo Práctico n°1 de la asignatura Programación, Tecnicatura Universitaria en Programación.
+## Repositorio para el Trabajo Práctico n.° 1 de la asignatura Programación, Tecnicatura Universitaria en Programación.
 ###  Participantes: Bide Bevacqua Lucia, Michaël Jean-Baptiste, Ignacio Martín Napal y Lucia Romero.
 
 ●  Descripción del proyecto:<br>
-    Nuestro proyecto simula un sitio de una empresa de viajes. Como tal, esta cuenta con un inicio, donde hay un pequeño guiño al cátalogo, una página donde pueden verse los productos, un formulario para consultas y la presentación de la empresa.<br>
+    Nuestro proyecto simula un sitio de una empresa de viajes. Como tal, cuenta con un inicio, donde hay un pequeño guiño al catálogo, una página donde pueden verse los productos, un formulario para consultas y la presentación de la empresa.<br>
 
 <img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/c0db0fa0-8849-4830-9828-ac6528944186" />
 <img width="300" height="170" alt="image" src="https://github.com/user-attachments/assets/11e37b85-e5b6-4edb-adba-cd5edfd4c716" />
@@ -16,16 +16,16 @@
     ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 
-●  Intrucciones para ejecutar:<br>
-1- Has click en el botón "code"<br>
+●  Instrucciones para ejecutar:<br>
+1- Haz clic en el botón "code"<br>
 <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/e6137f9a-e711-4371-a02f-f17553de3428" /><br>
 2- Descarga como archivo ZIP<br>
 <img width="154" height="39" alt="image" src="https://github.com/user-attachments/assets/33ad5e9b-498d-42d2-92f6-218bd22ff893" /><br>
-3- Una vez desgargado, busca el arhivo en tu computadora. Dale click derecho y selecciona "Extraer ficheros"<br>
+3- Una vez descargado, busca el archivo en tu computadora. Dale clic derecho y selecciona "Extraer ficheros"<br>
 <img width="163" height="35" alt="image" src="https://github.com/user-attachments/assets/dc1c1898-8e7f-4ce5-9aab-7fb4f4c1e276" /><br>
-Una vez realizado te quedará el archivo ZIP y la carpeta con los documentos listos<br>
+Una vez realizado, tendrás el archivo ZIP y la carpeta con los documentos listos<br>
 <img width="148" height="49" alt="image" src="https://github.com/user-attachments/assets/7937f479-6003-410f-b910-7c36b3c3755c" /><br>
-4- Ahora, a la carpeta de documentos le das click derecho y seleccionas "Abrir con Code". Una vez abierto te posicionas en el archivo index y, si tienes el Live Server instalado, seleccionas "Go Live"<br>
+4- Ahora, a la carpeta de documentos le das clic derecho y seleccionas "Abrir con Code". Una vez abierto te posicionas en el archivo "index" y, si tienes el Live Server instalado, seleccionas el "Go Live" ubicado en la esquina inferior derecha del editor<br>
 <img width="200" height="197" alt="image" src="https://github.com/user-attachments/assets/4bd83515-ae7d-448b-a542-a61ebdb37d4d" /> <br>
 <img width="78" height="24" alt="image" src="https://github.com/user-attachments/assets/00cd45d7-6524-49cf-8ec8-1a5de6df7722" /><br>
 ¡Y listo!
